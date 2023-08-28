@@ -3,6 +3,13 @@ package lccfcode.constructive;
 import java.util.Scanner;
 
 public class CF1365B {
+    /**
+     * 思考：1。根据交换的原理，只要有一个中间量，就能完成两个变量的交换，此题中则体现为中间量和两个变量保持不同类型
+     *      2. 继续思考，也就是只要有0且有1就可以完成题意
+     *      3. 考虑只有0或者只有1的情况，那需要看整体是否有序
+     *      4. 如果都不满足，则无法交换
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
